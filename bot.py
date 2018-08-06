@@ -17,8 +17,7 @@ class OgameBot(object):
         print(General(self.browser).get_resources())
         print(Buildings(self.browser).get_buildings_data())
 
-    def build(self):
-        id = input("Insert item id")
+    def build(self, id):
         Buildings(self.browser).build_structure(id)
 
     def login(self):
